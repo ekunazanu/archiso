@@ -1,0 +1,10 @@
+q
+help
+add /mnt/extra/music/
+clear
+rm ~
+live-filter 
+colorscheme ocean
+colorscheme green
+set format_trackwin
+add ~/Phoebe Bridgers St. Pancras Old Church London, 2017-07-05-FydC6RtW5W0.m4a
