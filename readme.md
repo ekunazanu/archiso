@@ -1,9 +1,3 @@
-This is for creating portable liveboot images of Arch using [archiso](https://wiki.archlinux.org/title/Archiso). This has an opinionated setup, mostly for personal use and for acting as a rescue drive.
+This is for creating portable liveboot images of Arch using [archiso](https://wiki.archlinux.org/title/Archiso). This has an opinionated setup, mostly as for personal use as a convenient rescue drive. To create the ISO, run `# mkarchiso -v -w /tmp/archiso-tmp ./`. The ISO will be in a newly created `out` directory.
 
-There are two users: `root` and `foo`. `foo` has autologin, and is part of `wheel` with root privileges. The setup consists of [sway](https://github.com/swaywm/sway/) and other wayland tools. For more information about the setup, refer to [this repository](https://codeberg.org/ekunazanu/dotfiles).
-
-<!--
-* Use this [profile.sh](https://gitlab.archlinux.org/archlinux/archiso/-/blob/master/docs/README.profile.rst).
-* Store configs in ```/etc/skel```.
-* Run ```sudo mkarchiso -v -C liveiso/pacman.conf -w work -L archlinux-sway -P ekunazanu -o finaliso liveiso```
--->
+The system consists of a minimal `baseline` configuration, along with [sway](https://github.com/swaywm/sway/) and other Wayland tools. For more information about the desktop environment setup, refer to [this repository](https://codeberg.org/ekunazanu/dotfiles). There are two users: `root` and `foo`. The `foo` user has autologin, and is part of `wheel` group with root privileges. To customize the ISO, change the [profile](https://gitlab.archlinux.org/archlinux/archiso/-/blob/master/docs/README.profile.rst) and refer to the [arch wiki](https://wiki.archlinux.org/title/Archiso) for more information.
