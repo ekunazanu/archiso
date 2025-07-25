@@ -21,6 +21,4 @@ file_permissions=(
   ["/etc/sudoers"]="0:0:400"
   ["/root"]="0:0:750"
   ["/home/foo/"]="1000:1000:644"
-  ["/home/foo/.config/scripts/"]="1000:1000:754"
-  ["/home/foo/passh.sh"]="1000:1000:754"
 )
